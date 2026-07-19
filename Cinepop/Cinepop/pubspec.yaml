@@ -1,0 +1,40 @@
+name: cinepop
+description: "Cinepop - A movie discovery app powered by The Movie Database (TMDB)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.4.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI / Icons
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.2.1
+
+  # State management
+  provider: ^6.1.2
+
+  # Networking
+  http: ^1.2.2
+
+  # Image caching
+  cached_network_image: ^3.4.1
+
+  # Local persistence (favorites)
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
