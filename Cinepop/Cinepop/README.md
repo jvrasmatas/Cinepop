@@ -42,44 +42,6 @@ identidad visual coherente basada en Material Design 3.
 - Un emulador Android/iOS configurado, o un navegador (Flutter Web) o dispositivo físico.
 - Una API key gratuita de [TMDB](https://www.themoviedb.org/settings/api).
 
-## Instalación y ejecución
-
-1. Clona el repositorio y entra a la carpeta del proyecto (donde está este `pubspec.yaml`):
-
-   ```bash
-   cd Cinepop/Cinepop/Cinepop
-   ```
-
-2. Instala las dependencias:
-
-   ```bash
-   flutter pub get
-   ```
-
-3. Ejecuta la app pasando tu API key de TMDB:
-
-   ```bash
-   flutter run --dart-define=TMDB_API_KEY=tu_api_key_aqui
-   ```
-
-   Si no se especifica ninguna key, la app usa una de desarrollo definida en
-   `lib/config/constants.dart` solo para pruebas rápidas; para uso real se
-   recomienda usar tu propia key.
-
-## Estructura del proyecto
-
-```
-lib/
-├── config/      # constantes, rutas, tema visual, catálogo de géneros
-├── models/      # clases de datos (Movie, Genre, Cast, ...)
-├── providers/   # manejo de estado (Provider / ChangeNotifier)
-├── screens/     # pantallas de la app
-├── services/    # consumo de la API de TMDB
-├── themes/      # paleta de colores
-├── utils/       # helpers (construcción de URLs de imágenes)
-└── widgets/     # componentes de UI reutilizables
-```
-
 ## Créditos
 
 Desarrollado por **Valeryn Duque y Juan Vrasmatas** para la materia de
